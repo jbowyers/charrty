@@ -1,10 +1,10 @@
-# About Chartinator #
+# About Charrty #
 
-**Chartinator** - Google Charts made easier and accessible.
+**Charrty** - Google Charts made easier and accessible.
 
 * **Description**: A jQuery plugin for transforming HTML tables, Google Sheets and js arrays into charts using Google Charts
-* **Repository**: https://github.com/jbowyers/chartinator
-* **Bower**: chartinator
+* **Repository**: https://github.com/jbowyers/charrty
+* **Bower**: charrty
 * **Requires**: jQuery, Google Charts
 * **Author**: jbowyers
 * **Copyright**: 2015 jbowyers
@@ -17,7 +17,7 @@ Transforming HTML tables, Google Sheets and js arrays into charts using Google C
 
 ### What are the current features? ###
 
-Chartinator currently supports the following:
+Charrty currently supports the following:
 
 * Creation of all chart types using Google Charts - Visit https://developers.google.com/chart/interactive/docs/gallery
 * Extraction of data from HTML tables, Google spreadsheets, and JavaScript arrays
@@ -35,29 +35,29 @@ Chartinator currently supports the following:
 
 ### How do I get set up? ###
 
-* **Download** - Download and extract the Chartinator zip files - https://github.com/jbowyers/chartinator
-* **Copy files** - Copy the chartinator.js file to your project
-* **Setup the HTML** - Open the chartinator.html sample file and copy and paste the desired html into the 
-files in your project. Or, adapt your existing project files to work with chartinator (see Configuration).
-* **Link to chartinator.js** - Add a script references in your HTML files
-* **Initialize Chartinator** - Activate the plugin using jQuery (see Configuration)
+* **Download** - Download and extract the Charrty zip files - https://github.com/jbowyers/charrty
+* **Copy files** - Copy the charrty.js file to your project
+* **Setup the HTML** - Open the charrty.html sample file and copy and paste the desired html into the 
+files in your project. Or, adapt your existing project files to work with charrty (see Configuration).
+* **Link to charrty.js** - Add a script references in your HTML files
+* **Initialize Charrty** - Activate the plugin using jQuery (see Configuration)
 
 ### Using Bower Package Manager ###
 
-The Chartinator repo is registered as a bower package as 'chartinator'.
+The Charrty repo is registered as a bower package as 'charrty'.
 
 ## Configuration ##
 
-The Chartinator repo includes the chartinator.js plugin file as well as sample HTML. 
+The Charrty repo includes the charrty.js plugin file as well as sample HTML. 
 To use the plugin you need to: 
 
-* Reference the chartinator.js file in your html
+* Reference the charrty.js file in your html
 * add/modify your HTML tables, Google Sheets or js arrays 
 * Use jQuery to modify options
 
 ### Using Data from HTML Tables ###
 
-Chartinator is designed to extract data from HTML tables. 
+Charrty is designed to extract data from HTML tables. 
 The header cells (th elements) in HTML table must be in the first row (or first column if transposing table)
 and should have a 'data-type' attribute with one of the following  values:
 
@@ -110,7 +110,7 @@ To use a Google Sheet as a data source you need to do the following:
 * Make sure your sheet is the only sheet in the Google Sheets document
 * Make the sheet public - Choose 'Publish to the Web' from the 'File' menu
 * Get the key id from the link url - Should look something like: '1kg6f4UVJPpT45D7ucAE8lhsVp8vIUl7bSMM442_DrhI'
-* Set the 'googleSheetKey' option in the jQuery Chartinator options to be the key id
+* Set the 'googleSheetKey' option in the jQuery Charrty options to be the key id
 
 Note: Data is extracted from a Google Sheet as comma separated values (csv) so don't use commas in data
 
@@ -147,13 +147,13 @@ The Chart must be initialized using jQuery.
 
 ```javascript
 
-    <script src="js/chartinator.js" ></script>
+    <script src="js/charrty.js" ></script>
     <script>
         jQuery(function ($) {
 
             //  Bar Chart Example
             // Use any jQuery selector to select the chart canvas(es)
-            var chart1 = $('#barChart').chartinator({
+            var chart1 = $('#barChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 
@@ -313,7 +313,7 @@ https://developers.google.com/chart/
 
 #### All chart types options ####
 
-The following are options that are specific to Chartinator and apply to all chart types unless otherwise specified.
+The following are options that are specific to Charrty and apply to all chart types unless otherwise specified.
 
 ```javascript
 
@@ -443,7 +443,7 @@ The following are options that are specific to Chartinator and apply to all char
     
     // The Google Chart Options
     // This option can be used with any chart type
-    // Some chart types have default options defined within Chartinator by the following objects:
+    // Some chart types have default options defined within Charrty by the following objects:
     // barChart, pieChart, columnChart, calendar, table, areaChart, lineChart
     // These objects should be used instead of this one when using those chart types
     // Default: no default - not defined
@@ -735,15 +735,15 @@ The following are some of the Google Charts Geo Chart options, unless otherwise 
         height: 200,
         
         // The chart title - not a Google Geo Chart option
-        // This option is supported by Chartinator only
+        // This option is supported by Charrty only
         title: 'Geo Chart',
         
         titleTextStyle: {
-            // Note: Support for this option has been added by Chartinator
+            // Note: Support for this option has been added by Charrty
             // but is not supported by Google Charts for this chart type
 
-            // The html tag that contains the title Chartinator adds to the top of the chart
-            // This is supported by Chartinator only
+            // The html tag that contains the title Charrty adds to the top of the chart
+            // This is supported by Charrty only
             tag: 'h3'
         }
     
@@ -784,7 +784,7 @@ The following are some of the Google Charts Geo Chart options, unless otherwise 
 ```
 
 Note: Google Charts does not apply a heading to this chart type.
-Chartinator adds a heading using either the caption from the HTMl data table or the chartTitle option.
+Charrty adds a heading using either the caption from the HTMl data table or the chartTitle option.
 For a complete list of Geo Chart options visit 
 [Google Geo Charts](https://developers.google.com/chart/interactive/docs/gallery/geochart#Configuration_Options)
 
@@ -811,7 +811,7 @@ The following are some of the Google Charts Calendar Chart options, unless other
         height: 200,
         
         titleTextStyle: {
-            // Note: Support for this option has been added by Chartinator
+            // Note: Support for this option has been added by Charrty
             // but is not supported by Google Charts for this chart type
 
             color: '#000',
@@ -868,7 +868,7 @@ The following are some of the Google Charts Calendar Chart options, unless other
         },
         tooltip: {
         
-            // Note: Support for this option has been added by Chartinator
+            // Note: Support for this option has been added by Charrty
             // but is not supported by Google Charts for this chart type
             textStyle: {
                 color: '#000',
@@ -892,7 +892,7 @@ The following are some of the Google Charts Table Chart options, unless otherwis
     table: { 
     
         // The table caption - not a Google Charts option for this chart type
-        // Chartinator option only
+        // Charrty option only
         title: 'Table Chart',
 
         // The font size in pixels - Number
@@ -902,7 +902,7 @@ The following are some of the Google Charts Table Chart options, unless otherwis
         fontSize: 16,
 
         // The table caption - not a Google Charts option for this chart type
-        // Chartinator option only
+        // Charrty option only
         // Default: the body font-family
         fontName: 'Roboto',
     
@@ -989,13 +989,13 @@ The following are some of the Google Charts Table Chart options, unless otherwis
 ```
 
 Note: Google Charts does not apply a table caption to this chart.
-Chartinator adds a caption to the table taken from either the HTML data table or the chartTitle option.
+Charrty adds a caption to the table taken from either the HTML data table or the chartTitle option.
 For a complete list of Table Chart options visit 
 [Google Table Charts](https://developers.google.com/chart/interactive/docs/gallery/table#Configuration_Options)
     
 ### Styling Tooltips ###
 Google Charts HTML enabled tooltips can be styled using the relevant CSS classes. 
-Chartinator adds a style element to the head of the document to apply custom styles to tooltips for for certain chart types.
+Charrty adds a style element to the head of the document to apply custom styles to tooltips for for certain chart types.
 The default Google Charts tooltip CSS is located at: https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css
 
 ### Dependencies ###

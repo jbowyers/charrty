@@ -1,18 +1,18 @@
 /**
- * Chartinator
+ * Charrty
  * Version: 0.3.10
- * URL: http://chartinator.com
- * Description: Chartinator transforms data contained in HTML tables, Google Sheets and js arrays into charts using Google Charts
+ * URL: http://charrty.jbowyers.com
+ * Description: Charrty transforms data contained in HTML tables, Google Sheets and js arrays into charts using Google Charts
  * Requires: jQuery, Google Charts
  * Author: jbowyers
  * Copyright: 2014-2015 jbowyers
- * License: This file is part of Chartinator.
- * Chartinator is free software: you can redistribute it and/or modify
+ * License: This file is part of Charrty.
+ * Charrty is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Chartinator is distributed in the hope that it will be useful,
+ * Charrty is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -20,11 +20,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see http://www.gnu.org/licenses/
  *
- * ABOUT CHARTINATOR  ===========================================================================
- * Chartinator transforms data contained in HTML tables, Google Sheets and js arrays into charts using Google Charts.
+ * ABOUT CHARRTY  ===========================================================================
+ * Charrty transforms data contained in HTML tables, Google Sheets and js arrays into charts using Google Charts.
  *
- * Apply the jQuery Chartinator plugin to the chart canvas(es)
- * or select the table(s) and Chartinator will insert a new chart canvas(es) after the table
+ * Apply the jQuery Charrty plugin to the chart canvas(es)
+ * or select the table(s) and Charrty will insert a new chart canvas(es) after the table
  * or define the Google Sheet key id
  * or create js data arrays
  *
@@ -40,9 +40,9 @@
 
     'use strict';
 
-    var chartinator = function (el, options) {
+    var charrty = function (el, options) {
 
-        // The chartinator object
+        // The charrty object
         var o = this;
 
         // Define table and chart elements
@@ -265,11 +265,11 @@
             geoChart: {
 
                 titleTextStyle: {
-                    // Note: Support for this option has been added by Chartinator
+                    // Note: Support for this option has been added by Charrty
                     // but is not supported by Google Charts for this chart type
 
-                    // The html tag that contains the title Chartinator adds to the top of the chart
-                    // This is supported by Chartinator only
+                    // The html tag that contains the title Charrty adds to the top of the chart
+                    // This is supported by Charrty only
                     tag: 'h3'
                 }
             },
@@ -283,7 +283,7 @@
                 cellScaleFactor: 0.017,
 
                 titleTextStyle: {
-                    // Note: Support for this option has been added by Chartinator
+                    // Note: Support for this option has been added by Charrty
                     // but is not supported by Google Charts for this chart type
 
                     color: '#000',
@@ -321,7 +321,7 @@
                 },
                 tooltip: {
 
-                    // Note: Support for this option has been added by Chartinator
+                    // Note: Support for this option has been added by Charrty
                     // but is not supported by Google Charts for this chart type
                     textStyle: {
                         color: '#000',
@@ -335,7 +335,7 @@
             table: {
 
                 // The font-family - not a Google Charts option for this chart type
-                // Chartinator option only
+                // Charrty option only
                 // Default: the body font-family
                 fontName: o.fontFamily,
 
@@ -740,7 +740,7 @@
 
             // Create Table Chart
             if ( o.options.createTable === 'table-chart') {
-                o.tableS = $( '#' + o.tableId ).chartinator( {
+                o.tableS = $( '#' + o.tableId ).charrty( {
                     columns: o.dataArray[0],
                     rows: o.dataArray.slice(1),
                     chartType: 'Table',
@@ -752,7 +752,7 @@
                 } );
             }
 
-            // Apply Chartinator tooltip styles
+            // Apply Charrty tooltip styles
             if ( o.options.chartType === 'Calendar') {
 
                 // Get any previously applied styles
@@ -1397,15 +1397,15 @@
         o.init(el, options);
         return this;
 
-    };  // chartinator close
+    };  // charrty close
 
     // Create the plugin ======================================================================
-    $.fn.chartinator = function (options) {
+    $.fn.charrty = function (options) {
         // Enable multi-element support
         return this.each(function () {
             var $el = $( this );
-            if (!$el.data('chartinator')) {
-                $( this ).data( 'chartinator', new chartinator( this, options ) );
+            if (!$el.data('charrty')) {
+                $( this ).data( 'charrty', new charrty( this, options ) );
             }
         });
     };

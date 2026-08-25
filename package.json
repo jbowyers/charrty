@@ -1,10 +1,10 @@
 {
-  "name": "chartinator",
-  "title": "Chartinator jQuery plugin",
+  "name": "charrty",
+  "title": "Charrty jQuery plugin",
   "version": "0.3.10",
   "description": "A jQuery plugin for transforming HTML tables, Google Sheets and js arrays into charts using Google Charts",
-  "main": "dist/chartinator.js",
-  "homepage": "http://chartinator.com",
+  "main": "dist/js/charrty.js",
+  "homepage": "http://charrty.jbowyers.com",
   "author": "jbowyers",
   "scripts": {
     "build": "npm install && grunt",
@@ -52,9 +52,9 @@
     },
     "deploy": {
       "root": "./../",
-      "css": "./../lib/chartinator",
-      "js": "./../lib/chartinator",
-      "images": "./../lib/chartinator",
+      "css": "./../lib/charrty",
+      "js": "./../lib/charrty",
+      "images": "./../lib/charrty",
       "lib": "./../lib",
       "html": "./"
     },
@@ -72,8 +72,8 @@
     "test": "./test"
   },
   "fileNames": {
-    "js": "chartinator",
-    "css": "chartinator",
+    "js": "charrty",
+    "css": "charrty",
     "demo": "demo"
   },
   "dependencies": {},

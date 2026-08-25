@@ -5,7 +5,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chartinator</title>
+    <title>Charrty</title>
 
     <!-- Unessential CSS and JS - Just here to make this sample page prettier -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
@@ -20,8 +20,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="lib/jquery-legacy/jquery.js"><\/script>')</script>
 
-    <!-- Chartinator  -->
-    <script src="js/chartinator.js" ></script>
+    <!-- Charrty  -->
+    <script src="js/charrty.js" ></script>
     <script type="text/javascript">
         jQuery(function ($) {
             /**
@@ -38,14 +38,14 @@
              * or 'data-role' attribute:  'tooltip','annotation'
              * The caption element's text is used as a title for the chart by default.
              *
-             * Apply the jQuery Chartinator plugin to the chart canvas(es)
-             * or select the table(s) and Chartinator will insert a new chart canvas(es) after the table
+             * Apply the jQuery Charrty plugin to the chart canvas(es)
+             * or select the table(s) and Charrty will insert a new chart canvas(es) after the table
              * or create js data arrays
              * See examples below and the readme file for more info
              */
 
             // Bar Chart Example
-            var chart1 = $('#barChart').chartinator({
+            var chart1 = $('#barChart').charrty({
 
                 // Custom Options ------------------------------------------------------
 
@@ -182,7 +182,7 @@
             });
 
             //  Pie Chart Example
-            var chart2 = $('#pieChart').chartinator({
+            var chart2 = $('#pieChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // Note: This example appends data from a data array
@@ -295,7 +295,7 @@
             });
 
             //  Geo Chart Example
-            var chart3 = $('#geoChart').chartinator({
+            var chart3 = $('#geoChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // Note: This example extracts data from an HTML table
@@ -382,7 +382,7 @@
                     //height: 250,
 
                     // The chart title - not a Google Geo Chart option
-                    // This option is supported by Chartinator only
+                    // This option is supported by Charrty only
                     title: 'Geo Chart',
 
                     // Background color
@@ -430,7 +430,7 @@
             });
 
             //  Column Chart Example
-            var chart4 = $('#columnChart').chartinator({
+            var chart4 = $('#columnChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // note: This example uses js data arrays for data instead of HTML tables
@@ -553,7 +553,7 @@
             });
 
             //  Area Chart Example
-            var chart5 = $('#areaChart').chartinator({
+            var chart5 = $('#areaChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // note: This example uses js data arrays for data instead of HTML tables
@@ -675,7 +675,7 @@
             });
 
             //  Line Chart Example
-            var chart6 = $('#lineChart').chartinator({
+            var chart6 = $('#lineChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // note: This example uses js data arrays for data instead of HTML tables
@@ -783,7 +783,7 @@
             });
 
             //  Table Chart Example
-            var chart7 = $('#tableChart').chartinator({
+            var chart7 = $('#tableChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // Note: this chart type does not display the table caption as a chart heading
@@ -812,7 +812,7 @@
                 table: {
 
                     // The table caption - not a Google Charts option for this chart type
-                    // Chartinator option only
+                    // Charrty option only
                     title: 'Table Chart',
 
                     // The font size in pixels - Number
@@ -822,7 +822,7 @@
                     fontSize: 16,
 
                     // The table caption - not a Google Charts option for this chart type
-                    // Chartinator option only
+                    // Charrty option only
                     // Default: the body font-family
                     fontName: 'Roboto',
 
@@ -935,7 +935,7 @@
             });
 
             // Calendar example
-            var chart8 = $('#myDates').chartinator({
+            var chart8 = $('#myDates').charrty({
 
                 // Custom Options ------------------------------------------------------
 
@@ -971,7 +971,7 @@
                     //height: 200,
 
                     titleTextStyle: {
-                    // Note: Support for this option has been added by Chartinator
+                    // Note: Support for this option has been added by Charrty
                     // but is not supported by Google Charts for this chart type
 
                         color: '#000',
@@ -1034,7 +1034,7 @@
                         colors: ['ff9de2', '#a82180']
                     },
                     tooltip: {
-                        // Note: Support for this option has been added by Chartinator
+                        // Note: Support for this option has been added by Charrty
                         // but is not supported by Google Charts for this chart type
                         textStyle: {
                             fontName: 'Roboto', // Default: body font-family
@@ -1046,7 +1046,7 @@
             });
 
             //  Bubble Chart Example
-            var chart9 = $('#bubbleChart').chartinator({
+            var chart9 = $('#bubbleChart').charrty({
 
                 // Custom Options ------------------------------------------------------
                 // note: This example uses js data arrays for data instead of HTML tables
@@ -1086,7 +1086,7 @@
 
                 // Google Bubble Chart Options
                 chartOptions: {
-                    // Note: This chart type does not have any Chartinator defined defaults
+                    // Note: This chart type does not have any Charrty defined defaults
                     // All Google Charts options use Google Charts defaults except where noted
 
                     // Width of chart in pixels - Number
@@ -1174,7 +1174,7 @@
 <header>
 <div class="wrapper">
     <div class="brand">
-        <p><a href="#" class="logo">Chartinator</a></p>
+        <p><a href="#" class="logo">Charrty</a></p>
     </div>
 
     <!-- START Responsive Menu HTML -->
@@ -1202,7 +1202,7 @@
 
 <section class="content">
     <div class="intro">
-        <h1>chartinator</h1>
+        <h1>charrty</h1>
         <p class="tagline">Google Charts made easier and accessible</p>
         <p>A jQuery plugin that transforms data from HTML tables, Google Sheets and js arrays into charts using Google Charts</p>
     </div>

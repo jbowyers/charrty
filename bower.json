@@ -1,13 +1,13 @@
 {
-  "name": "chartinator",
+  "name": "charrty",
   "version": "0.3.10",
   "authors": [
     "jbowyers"
   ],
   "description": "A jQuery plugin for transforming HTML tables, Google Sheets and js arrays into charts using Google Charts",
   "main": [
-    "dist/js/chartinator.js",
-    "dist/js/chartinator.min.js"
+    "dist/js/charrty.js",
+    "dist/js/charrty.min.js"
   ],
   "keywords": [
     "jQuery",
